@@ -30,13 +30,13 @@ window.initMap = function() {
 
   var customMapTypeId = 'custom_style';
 
-  var brooklyn = {lat: 41.850, lng: -73.961};
+  var breda =  {lat: 51.591, lng: 4.785};
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 6,
+    zoom: 4000,
     scrollwheel: false,
     streetViewControl: false,
     mapTypeControl: false,
-    center: brooklyn, // Brooklyn.
+    center: breda, // Brooklyn.
     mapTypeControlOptions: {
       mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
     }
@@ -45,8 +45,8 @@ window.initMap = function() {
   var marker = new google.maps.Marker({
     map: map,
     icon: image,
-    title: 'Brooklyn',
-    position: brooklyn
+    title: 'Breda',
+    position: breda
   });
 
   map.mapTypes.set(customMapTypeId, customMapType);
