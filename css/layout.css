@@ -393,9 +393,8 @@ fieldset[disabled] .btn-theme {
   position: relative;
   z-index: 1;
   text-align: center;
-  background: url(../img/leap3.jpg) no-repeat;
   background-size: cover;
-  background-position: center center;
+  background: url(../img) no-repeat center center;
   padding: 250px 0 200px;
 }
 
